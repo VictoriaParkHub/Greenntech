@@ -30,11 +30,12 @@
   --color-gray-900: #212529;
 
   /*Font-size*/
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-large: 40px;
+  --font-medium: 30px;
+  --font-semi-regular: 25px;
+  --font-regular: 20px;
+  --font-small: 15px;
+  --font-micro: 11px;
 
   /*Font-weight*/
   --weight-black: 900;
@@ -57,6 +58,7 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -22,13 +22,10 @@
     height: 60px;
     vertical-align: middle;
   }
-  .navbar__logo {
-    font-size: var(--font-medium);
-    font-weight: var(--weight-medium);
-  }
-  
   .navbar__logo a{
     color: var(--color-white);
+    font-size: var(--font-semi-regular);
+    font-weight: var(--weight-medium);
   }
   
   .navbar__menu {
@@ -51,9 +48,10 @@
   
   .navbar__toggle-btn {
     position: absolute;
-    top: 22px;
-    right: 32px;
+    top: 30px;
+    right: 30px;
     font-size: 24px;
+    color: var(--color-white);
     display: none;
   }
 
@@ -81,32 +79,28 @@
   }
 
   .home__description{
-    font-weight: var(--weight-medium);
-    font-size: var(--font-regular);
     line-height: 30px;
+    color: var(--color-white);
   }
 
 
   /* About */
 
-  section{
+  #about{
     padding: 50px;
     text-align: center;
     margin: auto;
   }
   
   .about__container{
-    max-width: 1000px; /*최대로 커질 수 있는 너비*/
+    max-width: 850px; /*최대로 커질 수 있는 너비*/
     margin: auto;
   }
 
 .about__majors {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px 2%;
-    margin: 50px 0;
-    text-align: center;
+    margin: 80px 0;
   }
   
   .major__icon {
@@ -114,9 +108,10 @@
     height: 170px;
     line-height: 170px;
     font-size: 70px;
-    border: 2px solid var(--color-orange);
+    border: 2px solid var(--color-green);
     border-radius: 50%;
-    color: var(--color-orange);
+    color: var(--color-green);
+    margin: 0 auto;
   }
   
   .major__title,
@@ -125,11 +120,9 @@
   }
   
   .major__title {
-    font-weight: var(--weight-bold);
-    padding: 5px 0;
-  }
-  .major__description {
-    font-size: var(--font-small);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-medium);
+    padding: 20px 0;
   }
   
   .major__icon i {
@@ -137,41 +130,81 @@
     /*200~350ms가 적당한 수치*/
   }
   .major__icon i:hover {
-    color: var(--color-blue);
+    color: #48a64f;
     transform: rotate(-30deg) scale(1.1);
   }
   
   /*hover와 transition은 각각 다르게 적용*/
   
-  .about__jobs img {
-    width: 150px;
-    height: 50px;
+  /*Content*/
+  #content{
+    margin-bottom: 50px;
   }
-  
-  .job {
+  .content__container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .job__description {
-    margin: 0 16px;
-    text-align: left;
-  }
-  
-  .job__name,
-  .job__period {
-    color: var(--color-light-grey);
-  }
-  
-  .job__name {
-    font-size: var(--font-small);
-  }
-  
-  .job__period {
-    font-size: var(--font-micro);
   }
 
+  .content__left__container{
+    width: 50%;
+  }
+  .content__left__container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content__right__container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .title__container{
+    width: 500px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .title__container p{
+    line-height: 25px;
+  }
+
+
+/*footer*/
+
+#footer{
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  padding: 50px;
+}
+#footer p{
+  color: var(--color-white);
+}
+.footer__address{
+  color: var(--color-white);
+  font-size: var(--font-regular);
+}
+
+/*Scroll*/
+.arrow-up{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+  padding: 10px;
+  width: 50px;
+  background-color: var(--color-green);
+  color: white;
+  border-radius: 5px;
+  opacity: 1;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+
+.arrow-up.visible{
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
   /*반응형 미디어쿼리 사용*/
@@ -182,58 +215,101 @@ A. NO. 미디어쿼리에는 최소한의 것만 들어가야함*/
 
 /*for below 768px screen width*/
 @media screen and (max-width: 768px) {
-    .navbar__toggle-btn {
-      display: block;
-    }
-    #navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      background-color: var(--color-gray-dark);
-    }
-  
-    #navbar.navbar--dark {
-      padding: 16px;
-    }
-  
-    .navbar__menu {
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      /*text-align:center;를 사용하려면
-      너비가 넓어야함! (100%로 설정)*/
-      display: none;
-    }
-  
-    .navbar__menu.open {
-      display: block;
-    }
-  
-    .about__majors {
-      flex-direction: column;
-    }
-  
-    .major {
-      margin-bottom: 38px;
-    }
-  
-    .skillset {
-      flex-direction: column;
-    }
-    /*모두 div로 설정해서 flex-box를
-    이용하니까 flex-direction:column;으로
-    */
-  
-    .project {
-      flex-grow: 1;
-    }
-  
-    .arrow-up {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
-      line-height: 50px;
-      right: 16px;
-      bottom: 16px;
-    }
+  h1 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
+  }
+
+  p {
+    font-size: var(--font-small);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-gray-dark);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__menu {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    /*text-align:center;를 사용하려면
+    너비가 넓어야함! (100%로 설정)*/
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  /*home*/
+  #home{
+    padding-top: 30vh;
+  }
+  .home__description{
+    line-height: 25px;
+  }
+
+  /*about*/
+  #about{
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 0px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+  /*모두 div로 설정해서 flex-box를
+  이용하니까 flex-direction:column;으로
+  */
+
+  .project {
+    flex-grow: 1;
+  }
+
+  /*content*/
+  .content__container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .content__left__container{
+    width: 100%;
+  }
+  .content__right__container{
+    width: 100%;
+  }
+  .title__container{
+    padding-left: 0px;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
   }
   
