@@ -34,6 +34,7 @@
   --font-medium: 30px;
   --font-semi-regular: 25px;
   --font-regular: 20px;
+  --font-semi-small: 18px;
   --font-small: 15px;
   --font-micro: 11px;
 
@@ -106,7 +107,7 @@
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-black);
-    margin: 16px 0px;
+    margin: 10px 0px;
   }
   
   h2 {
@@ -129,4 +130,11 @@
     color: var(--color-black);
     margin: 4px 0;
   }
-  
+
+  .description{
+    font-size: var(--font-semi-small);
+    font-weight: var(--weight-medium);
+    color: var(--color-black);
+    margin: 20px;
+    line-height: 28px;
+  }

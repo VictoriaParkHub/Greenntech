@@ -14,28 +14,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/7b45ff2637.js" crossorigin="anonymous"></script>
-	<!-- Document Title
+    <script type="text/javascript" src="js/includeHTML.js"></script>
+
+    <!-- Document Title
 	============================================= -->
 	<title>(주)그린앤텍</title>
 </head>
 <body>
-	<!--Navbar-->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <img src="css/img/logo.png" alt="logo">
-            <a href="#">그린앤텍</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#notice">Notice</li>
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
-        <!--Toggle button-->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
+    <!--Nav-->
+    <nav include-html="nav.html"></nav>
 
 	<!--Home--> 
     <section id="home">
@@ -93,25 +80,10 @@
 			</div>
         </div>
     </section>
+    
+    <!--footer-->
+    <footer include-html="footer.html"></footer>
 
-	<!--footer-->
-    <footer id="footer">
-        <div class="footer__container">
-            <div class="footer__left">
-                <address class="footer__address">
-                    대전 대덕구 대화로 160, 17동 116호
-                </address>
-                <p class="footer__rights">ⓒ All Rights Reserved by greenntech.</p>
-            </div>
-            <div class="footer__right">
-                <p class="footer__phone">☎ 042) 638-8754</p>
-            </div>
-        </div>
-        
-        <!--Arrow up-->
-        <button class="arrow-up">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    </footer>
+    <script>includeHTML();</script>
 </body>
 </html>
