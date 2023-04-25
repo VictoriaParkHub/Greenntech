@@ -27,6 +27,10 @@
     font-size: var(--font-semi-regular);
     font-weight: var(--weight-medium);
   }
+
+  .navbar__menu a{
+    color: var(--color-white);
+  }
   
   .navbar__menu {
     display: flex;
