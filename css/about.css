@@ -13,7 +13,7 @@ h1{
 
 #Greeting{
     outline : 1px solid red;
-    height: 700px;
+    height: 800px;
     background-color: var(--color-green);
 }
 
@@ -31,6 +31,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     max-width: 1000px;
+    height: 450px;
     margin: 0 auto;
     margin-top: 30px;
     background-color: var(--color-white);
@@ -39,10 +40,27 @@ h1{
     display: block;
     width: 40%;
     object-fit: cover;
+    height: 100%;
 }
 
 .Greeting__container2 p span{
     display: block;
+}
+
+.description{
+    font-size: var(--font-semi-small);
+    font-weight: var(--weight-light);
+    color: var(--color-black);
+    margin: 20px;
+    line-height: 28px;
+    background-color: white;
+    padding: 20px;
+  }
+
+.point{
+    font-weight: var(--weight-bold);
+    font-size: 22px;
+    line-height: 80px;
 }
 
 
@@ -51,14 +69,14 @@ h1{
 #History{
     outline : 1px solid red;
     width: 100%;
+    height: 600px;
 }
 
 .History__container{
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 #History table{
-    outline: 1px solid red;
 }
 
 .History__container2{
@@ -68,6 +86,20 @@ h1{
     margin-top: 30px;
 }
 
+.History__container2 table{
+    width: 90vw;
+    margin-bottom: 40px;
+}
+
+.History__container2 table tr{
+    border-top: 1px solid #d0d0d8;
+    border-bottom: 1px solid #d0d0d8;
+}
+
+.History__container2 table tr td{
+    padding: 5px;
+    text-align: left;
+}
 
 
 /*for below 768px screen width*/
@@ -92,7 +124,7 @@ h1{
 
     #Greeting{
         outline : 1px solid red;
-        height: 1050px;
+        height: 140vh;
     }
     .Greeting__container2 img{
         width: 100%;
