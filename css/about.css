@@ -12,13 +12,13 @@ h1{
 /*Greeting*/
 
 #Greeting{
-    outline : 1px solid red;
-    height: 800px;
-    background-color: var(--color-green);
+    height: 1000px;
+    background-image: url(../css/img/aboutbg.png);
+    background-size: cover;
 }
 
 .Greeting__container{
-    padding-top: 15vh;
+    padding-top: 100px;
     color: var(--color-white);
 }
 
@@ -27,27 +27,20 @@ h1{
 }
 
 .Greeting__container2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px;
-    height: 450px;
+    max-width: 100vh;
     margin: 0 auto;
     margin-top: 30px;
     background-color: var(--color-white);
 }
 .Greeting__container2 img{
     display: block;
-    width: 40%;
     object-fit: cover;
-    height: 100%;
-}
-
-.Greeting__container2 p span{
-    display: block;
+    width: 100vh;
+    height: 300px;
 }
 
 .description{
+    height: 40vh;
     font-size: var(--font-semi-small);
     font-weight: var(--weight-light);
     color: var(--color-black);
@@ -61,22 +54,18 @@ h1{
     font-weight: var(--weight-bold);
     font-size: 22px;
     line-height: 80px;
+    display: block;
 }
 
 
 /*History*/
 
 #History{
-    outline : 1px solid red;
-    width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 .History__container{
     padding-top: 50px;
-}
-
-#History table{
 }
 
 .History__container2{
@@ -87,18 +76,30 @@ h1{
 }
 
 .History__container2 table{
-    width: 90vw;
-    margin-bottom: 40px;
+    table-layout:fixed;
+    width:100%;
+    text-align:center;
+    max-width: 1000px;
+    padding: 10px;
 }
 
-.History__container2 table tr{
-    border-top: 1px solid #d0d0d8;
-    border-bottom: 1px solid #d0d0d8;
+.History__container2 table th{
+    background:#f1f1f1;
 }
 
-.History__container2 table tr td{
-    padding: 5px;
-    text-align: left;
+.History__container2 table td, 
+.History__container2 table th{
+    padding:10px 20px;
+    border-top:1px solid #f1f1f1;
+    word-break:break-all
+}
+
+.History__container2 table tr th:first-child{
+    width: 15%;
+}
+
+.History__container2 table tr th:nth-child(2){
+    width: 15%;
 }
 
 
@@ -124,7 +125,7 @@ h1{
 
     #Greeting{
         outline : 1px solid red;
-        height: 140vh;
+        height: 1000px;
     }
     .Greeting__container2 img{
         width: 100%;
@@ -134,4 +135,22 @@ h1{
     .Greeting__container2 p span{
         display: inline;
     }
+
+    .description{
+        height: 50vh;
+    }
+
+    #History{
+        outline : 1px solid red;
+        height: 800px;
+    }
+
+    .History__container2 table tr th:first-child{
+        width: 20%;
+    }
+    
+    .History__container2 table tr th:nth-child(2){
+        width: 20%;
+    }
+
     }
