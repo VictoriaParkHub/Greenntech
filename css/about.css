@@ -40,7 +40,7 @@ h1{
 }
 
 .description{
-    height: 40vh;
+    height: 250px;
     font-size: var(--font-semi-small);
     font-weight: var(--weight-light);
     color: var(--color-black);
@@ -48,6 +48,7 @@ h1{
     line-height: 28px;
     background-color: white;
     padding: 20px;
+    padding-top: 40px;
   }
 
 .point{
@@ -138,6 +139,7 @@ h1{
 
     .description{
         height: 400px;
+        padding-top: 20px;
     }
 
     #History{
