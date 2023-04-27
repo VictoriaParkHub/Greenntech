@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="그린앤텍">
+	<meta name="description" content="그린앤텍 Website">
+
+	<!-- Reset Style -->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- Core CSS -->
+	<link rel="stylesheet" href="css/contact.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7b45ff2637.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/includeHTML.js"></script>
+
+    <!-- Document Title
+	============================================= -->
+	<title>(주)그린앤텍</title>
+</head>
+<body>
+    <!--Nav-->
+    <nav include-html="nav.html"></nav>
+
+    <!--Notice-->
+    <section id="Contact">
+        <div class="Contact__container">
+            <h1>무엇을 도와드릴까요?</h1>
+            <p class="h1__english">Contact</p>
+        </div>
+        <div class="container">
+            <div class="contact__wrapper">
+                <form action="#" class="form-elements" novalidate="novalidate">
+            
+                    <fieldset class="form__container">
+                        <label for="name" class="form__title">업체명</label>
+                        <input class="form__description" id="name" name="업체명" placeholder="업체명을 입력해주세요." />
+                    </fieldset>
+                
+                    <fieldset class="form__container">
+                        <label for="name2" class="form__title">성함</label>
+                        <input class="form__description" id="name2" name="성함" placeholder="성함을 입력해주세요." />
+                    </fieldset>
+                
+                    <fieldset class="form__container">
+                        <label for="phone" class="form__title">연락처</label>
+                        <input class="form__description" id="phone" name="연락처" placeholder="연락처를 입력해주세요." />
+                    </fieldset>
+                
+                    <fieldset class="form__container">
+                        <label for="email" class="form__title">이메일</label>
+                        <input class="form__description" id="email" name="이메일" type="email" value=""
+                        required placeholder="이메일 주소를 입력해주세요.  ex ) your.name@email.com"/>
+                    </fieldset>
+                
+                    <fieldset class="form__container">
+                        <label for="message" class="form__title">문의내용</label>
+                        <textarea class="form__description text" id="message" name="문의내용" rows="10"
+                        placeholder="문의하실 내용을 입력해주세요."></textarea>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer include-html="footer.html"></footer>
+
+    <script>includeHTML();</script>
+</body>
+</html>

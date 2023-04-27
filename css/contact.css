@@ -1,0 +1,148 @@
+/*Title*/
+
+h1{
+    text-align: center;
+    color: white !important;
+}
+
+.h1__english{
+    text-align: center;
+    color: white;
+}
+
+/*Notice*/
+
+#Contact{
+    padding: 100px 0;
+    height: 100%;
+    background-image: url(../css/img/aboutbg.png);
+    background-size: cover;
+}
+
+.contact__wrapper{
+    margin-top: 30px;
+}
+
+
+/*form 부분*/
+.form-elements{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-style: normal;
+  }
+  
+  /*문의유형*/
+  .form__container{
+    display: flex;
+    margin: 10px;
+  }
+
+  .form__title{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: var(--font-regular);
+  }
+  .form__description{
+    width: 100%;
+    font-weight: var(--weight-thin);
+    color: #979797;
+    padding: 1.2em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+  
+  .text{
+    height: 300px !important;
+  }
+  
+  .form__category{
+    display: flex;
+  }
+  .category{
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block !important;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .form__category label{
+    padding: 10px;
+    font-weight: var(--weight-regular);
+  }
+  
+  /*문의하기 버튼 */
+  .contact__btn{
+    display: block;
+    color: white;
+    cursor: pointer;
+    background: #1462ff;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px -10px #4a74c9;
+    width: 220px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: var(--font-semi-regular);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    text-indent: -10px;
+  }
+  .contact__btn::after{
+    content: ">";
+    font-size: var(--font-semi-regular);
+    font-weight: var(--weight-bold);
+    color: white;
+    position: absolute;
+    right: 30px;
+  }
+  
+  .contact__btn:hover{
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+  }
+
+/*button*/
+.button.-green {
+    color: var(--color-white);
+    background: var(--color-green);
+}
+.button {
+    margin: 10px;
+    padding: 12px 12px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: 0 none;
+    border-radius: var(--borderRadius);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    box-shadow: 2px 5px 10px var(--color-gray-300);
+    border-radius: 0.25rem;
+}
+
+
+
+/*for below 768px screen width*/
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: var(--font-medium);
+      font-weight: var(--weight-bold);
+      color: var(--color-black);
+      margin: 16px 0px;
+    }
+  
+    p {
+      font-size: var(--font-small);
+      font-weight: var(--weight-regular);
+      color: var(--color-black);
+      margin: 4px 0;
+    }
+    }

@@ -124,7 +124,6 @@ h1{
     }
 
     #Greeting{
-        outline : 1px solid red;
         height: 1000px;
     }
     .Greeting__container2 img{
@@ -143,7 +142,6 @@ h1{
     }
 
     #History{
-        outline : 1px solid red;
         height: 800px;
     }
 
