@@ -114,13 +114,14 @@ h1{
     background: var(--color-green);
 }
 .button {
-    margin: 10px;
+    display: block;
+    margin:0 auto;
+    margin-top: 20px;
     padding: 12px 12px;
     cursor: pointer;
     text-align: center;
     white-space: nowrap;
     border: 0 none;
-    border-radius: var(--borderRadius);
     font-size: 13px;
     font-weight: 500;
     line-height: 1.3;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="그린앤텍">
+	<meta name="description" content="그린앤텍 Website">
+
+	<!-- Reset Style -->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!-- Core CSS -->
+	<link rel="stylesheet" href="css/login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7b45ff2637.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/includeHTML.js"></script>
+
+    <!-- Document Title
+	============================================= -->
+	<title>(주)그린앤텍</title>
+</head>
+<body>
+    <!--Nav-->
+    <nav include-html="nav.html"></nav>
+
+    <!--Login-->
+    <section id="container" class="top">
+        <div class="item">
+            <h1>
+                <img src="css/img/logo.png" alt="logo">
+                <span>그린앤텍</span>
+            </h1>
+            <p>로그인을 위해 아이디와 비밀번호를 입력해주세요.</p>
+            <div class="id">
+                <input type="text" name="username" placeholder="Id">   
+                <span></span> 
+            </div>
+            <div class="pw">
+                <input type="password" name="password" placeholder="Password" minlength="8" required>
+                <span></span>
+            </div>
+            <div class="check">
+                <input type="checkbox" class="checkbox01" id="remember">
+                <label for="remember">아이디 저장</label>
+                <input type="checkbox" class="checkbox02" id="remember">
+                <label for="remember">자동로그인</label>
+            </div>
+            <input class="btn" type="submit" value="Log in">
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer include-html="footer.html"></footer>
+
+    <script>includeHTML();</script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

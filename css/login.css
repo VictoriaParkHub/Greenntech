@@ -1,0 +1,80 @@
+/*로그인 영역*/
+
+.id, .pw, .check{
+    padding: 10px;
+}
+p{
+    margin : 4px 10px !important;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray-500);
+    padding : 130px 0 50px 0;
+  }
+  .item {
+    border: 1px solid var(--color-gray-400);
+    border-top: 10px solid var(--color-green);
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+  }
+  h1 img{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+  }
+  h1 span{
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: var(--weight-black);
+  }
+  
+  .id{
+    margin-top: 20px;
+  }
+  .id input, .pw input{
+    font-size: 15px;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;    
+    outline: none;
+    border: none;
+    position: relative;
+  }
+
+  .id span, .pw span{
+    display: block;
+    height: 1px;
+    background-color: #d2d0db;
+  }
+
+  .check{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+  }
+
+  .checkbox02{
+    margin-left: 10px;
+  }
+
+  .btn{
+    width: 60%;
+    background-color: var(--color-green);
+    outline: none;
+    border: none;
+    margin: 50px 0;
+    border-radius: 3px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }

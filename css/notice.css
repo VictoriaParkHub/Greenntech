@@ -2,10 +2,12 @@
 
 h1{
     text-align: center;
+    color: white !important;
 }
 
 .h1__english{
     text-align: center;
+    color: white;
 }
 
 /*Notice*/
@@ -41,12 +43,14 @@ h1{
 }
 
 #Notice{
-    padding-top: 100px;
     height: 1300px;
 }
 
 .Notice__container{
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-image: url(../css/img/aboutbg.png);
 }
 
 .Notice__container2{
